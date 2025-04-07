@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(146, 152, 152);
+}
+
+.cards {
+  display: flex;
+}
+.profile-card {
+  margin: 20px;
+  width: 250px;
+  height: 300px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.profile-card p {
+  margin-bottom: 15px;
+}
+.profile-card ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile-card .profile-photo {
+  height: 28%;
+  background-color: rgb(56, 72, 248);
+  margin-bottom: 45px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.profile-card .profile-photo img {
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 3px solid rgb(56, 72, 248);
+}
+.profile-card .icons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profile-card button {
+  background-color: rgb(56, 72, 248);
+  color: white;
+  height: 30px;
+  width: 120px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.profile-card button:hover {
+  background-color: rgb(42, 42, 164);
+}
+
+.shoe-card {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 20px;
+  padding: 15px;
+}
+
+.shoe-card .heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+.shoe-card .photo-container img {
+  object-fit: fill;
+  width: 100%;
+  height: 160px;
+}
+
+.shoe-card .details-container {
+  margin-bottom: 10px;
+}
+.shoe-card .details-container p {
+  color: #817c7c;
+}
+.shoe-card .price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.shoe-card .price-container h2 {
+  color: rgb(89, 87, 87);
+}
+.shoe-card button {
+  width: 100%;
+  background: linear-gradient(700deg, orange, blue);
+  height: 30px;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.shoe-card .price-container .color {
+  display: flex;
+}
+.shoe-card .price-container .color ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2px;
+}
+.shoe-card button:hover {
+  background: linear-gradient(130deg, orange, blue);
+}

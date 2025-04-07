@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Testing</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 150px;
+      }
+      .item {
+        background-color: aqua;
+        border: 1px solid black;
+      }
+      .item1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .item2 {
+        grid-row: 1/3;
+      }
+      .item6 {
+        grid-column: 2/4;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .items {
+        flex-grow: 1;
+        width: 90px;
+        background-color: blueviolet;
+        border: 1px solid black;
+      }
+
+      .webpage {
+        display: grid;
+        grid-template-areas: "header header header" "sidebar main main" "footer footer footer";
+      }
+      .box {
+        background-color: pink;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item item6">6</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="items item11">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+    </div>
+    <div class="webpage">
+      <div class="box" style="grid-area: header">Header</div>
+      <div class="box" style="grid-area: sidebar">Sidebar</div>
+      <div class="box" style="grid-area: main">Main</div>
+      <div class="box" style="grid-area: footer">Footer</div>
+    </div>
+  </body>
+</html>
