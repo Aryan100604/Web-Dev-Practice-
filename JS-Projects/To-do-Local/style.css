@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 47, 47);
+}
+
+.container {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+#input-task {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#add-task-btn {
+  background-color: rgb(39, 39, 176);
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.completed {
+  background-color: green;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: rgb(16, 14, 14);
+  border: 1px solid black;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+ul li button {
+  background-color: red;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}

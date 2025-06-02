@@ -105,6 +105,14 @@ body {
 .shoe-card .price-container .color {
   display: flex;
 }
+.shoe-card .price-container .color img {
+  border: none;
+  cursor: pointer;
+}
+
+.shoe-card .price-container .color img:hover {
+  border: 1px solid black;
+}
 .shoe-card .price-container .color ul {
   display: flex;
   list-style: none;
@@ -113,4 +121,10 @@ body {
 }
 .shoe-card button:hover {
   background: linear-gradient(130deg, orange, blue);
+}
+
+@media screen and (max-width: 700px) {
+  .cards {
+    display: block;
+  }
 }
